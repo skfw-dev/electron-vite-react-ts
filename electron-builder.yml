@@ -1,5 +1,5 @@
-appId: net.skfw.nokowebview
-productName: nokowebview
+appId: net.skfw.ts/nokodesk
+productName: nokodesk
 directories:
   buildResources: build
 files:
@@ -38,7 +38,6 @@ linux:
     - AppImage
     - snap
     - deb
-  maintainer: skfw.net
   category: Utility
 appImage:
   artifactName: ${name}-${version}.${ext}

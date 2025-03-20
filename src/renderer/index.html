@@ -1,12 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Electron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta
       http-equiv="Content-Security-Policy"
-	  content="connect-src 'self' http://localhost:8080 https://skfw.net; default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
-      />
+      content="connect-src 'self' http://localhost:8080 http://skfw.net https://skfw.net http://*.skfw.net https://*.skfw.net; default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+    />
   </head>
   <body>
     <div id="root"></div>

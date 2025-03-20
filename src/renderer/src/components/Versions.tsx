@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { useState } from 'react'
+import * as React from 'react';
+import { useState } from 'react';
 
 function Versions(): React.JSX.Element {
-  const [versions] = useState(window.electron.process.versions)
+  const [versions] = useState(window.electron.process.versions);
 
   return (
     <ul className="versions">
@@ -10,7 +10,7 @@ function Versions(): React.JSX.Element {
       <li className="chrome-version">Chromium v{versions.chrome}</li>
       <li className="node-version">Node v{versions.node}</li>
     </ul>
-  )
+  );
 }
 
-export default Versions
+export default Versions;

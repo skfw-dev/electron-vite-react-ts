@@ -17,11 +17,10 @@ function App(): React.JSX.Element {
     })
       .then((res) => res.json())
       .then((data) => {
-		if (document.querySelector('div.text'))
-		  document.querySelector('div.text')!.textContent = data?.message ?? 'no data';
+        if (document.querySelector('div.text')) document.querySelector('div.text')!.textContent = data?.message ?? 'no data';
       })
       .catch((error) => {
-        console.error("fetch-error", error);
+        console.error('fetch-error', error);
       });
     //window.electron.ipcRenderer.send('notification', 'http://localhost:8080');
   };
